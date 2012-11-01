@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Holo.NoActionBar" />
+    
+    <style name="PreferencesTheme" parent="android:Theme.Holo" >
+    	<item name="android:windowBackground">@color/setting_background</item>
+    	<item name="switchStyle">@style/Widget.Holo.CompoundButton.Switch</item>
+        <item name="switchPreferenceStyle">@style/Preference.SwitchPreference</item>
+	</style>
+	
+    <style name="SwitchTheme" parent="android:Theme.Holo.NoActionBar" >
+        <item name="switchStyle">@style/Widget.Holo.CompoundButton.Switch</item>
+    </style>
+    
+</resources>

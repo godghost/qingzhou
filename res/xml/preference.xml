@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<PreferenceScreen   
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:title="Settings"
+    >  
+    <EditTextPreference
+    	android:title="@string/name"
+    	android:key="@string/pref_key_name"
+    	android:summary="@string/name"
+    	android:defaultValue="@string/name"
+    	android:layout="@layout/preference_row"/> 
+    <org.jraf.android.backport.switchwidget.SwitchPreference
+    	android:title="@string/password"
+    	android:key="@string/pref_key_password_switcher"
+    	android:defaultValue="false"/>
+    <com.loongsoft.qingzhou.ResetPasswordPreference
+    	android:title="@string/reset_password"
+    	android:key="@string/pref_key_password"
+    	android:layout="@layout/preference_row"/>
+    <com.loongsoft.qingzhou.TimePreference
+    	android:title="@string/reminder"
+    	android:key="@string/pref_key_timer"
+    	android:summary="22:30"
+    	android:defaultValue="22:30"
+    	android:layout="@layout/preference_row"/>  
+    <Preference
+        android:title="@string/about"
+        android:key="@string/pref_key_about"
+        android:layout="@layout/preference_row"/>
+</PreferenceScreen>

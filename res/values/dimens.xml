@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_text_size">20sp</dimen>
+    <dimen name="item_text_padding">10dp</dimen>
+    <dimen name="item_text_margin">5dp</dimen>
+    <dimen name="day_title_height">45dp</dimen>
+    <dimen name="day_title_button_width">50dp</dimen>
+    <dimen name="day_title_button_margin_left">22dp</dimen>
+    <dimen name="setting_item_margin">40dp</dimen>
+    <dimen name="setting_item_padding">8dp</dimen>
+    <dimen name="password_input_hint_text_size">15sp</dimen>
+    <dimen name="list_text_size">18sp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="chart_legend_sise">10sp</dimen>
+    <dimen name="list_item_height">45dp</dimen>
+</resources>

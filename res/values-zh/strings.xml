@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="app_name">轻舟</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="title_activity_main">轻舟</string>
+    <string name="title_activity_aday">一天</string>
+    <string name="title_activity_days">时间轴</string>
+    <string name="title_activity_welcome">欢迎</string>
+    <string name="days_title_postfix"> ‧ 轻舟</string>
+    <string name="days_date_format">yyyy年MMMM</string>
+    <string name="aday_date_format">MMMMdd日</string>
+    <string name="status_bar_notification_ticker_text">不要忘记您在轻舟的承诺哦~</string>
+    <string name="status_bar_notification_text">今天您记录生活了吗~</string>
+    
+    <string name="agree">同意</string>
+    <string name="disagree">退出</string>
+    
+    <string name="input_password">请输入密码</string>
+    <string name="confirm_password">请确认密码</string>
+    <string name="welcome_intro">一种轻量级记录生活的方式</string>
+    <string name="welcome_overview">轻舟是一个可以帮助您记录每天所发生的事情的工具。</string>
+    <string name="welcome_promise">欢迎使用轻舟。\n这意味您要遵守每日记录生活的承诺，应用会按时提醒您记录。\n您同意吗？</string>
+    <string name="welcome_settings_name">请输入名字</string>
+    <string name="welcome_settings_password_switch">密码:</string>
+    
+    <string name="name">名字</string>
+    <string name="password">密码</string>
+    <string name="reset_password">重设密码</string>
+    <string name="reminder">定时提醒</string>
+    
+    <string name="title_activity_frequent">最常干的事情</string>
+	<string name="most_frequent_title">最常干的事情</string>
+	<string name="chart_summary">从{start}到{end}, 总计为：{total}。</string>
+
+	<string name="notice">注意：</string>
+	<string name="password_is_wrong">密码错误</string>
+	<string name="password_is_empty">密码为空</string>
+	
+	<string name="about">关于</string>
+</resources>

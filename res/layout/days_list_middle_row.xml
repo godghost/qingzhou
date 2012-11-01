@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <TextView
+	    android:id="@+id/days_day"
+	    android:layout_width="25dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="2dp"
+	    android:gravity="center"
+	    android:layout_gravity="center_vertical"
+	    android:textColor="@color/timeline"
+	    android:textSize="@dimen/item_text_size"
+	    android:layout_alignTop="@+id/days_linearLayout_text"
+		android:layout_alignBottom="@+id/days_linearLayout_text"/>
+    
+    <ImageView
+	    android:id="@+id/days_timeline"
+	    android:layout_width="5dp"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="30dp"
+	    android:layout_gravity="bottom"
+	    android:src="@drawable/timeline"
+	    android:layout_alignTop="@+id/days_linearLayout_text"
+		android:layout_alignBottom="@+id/days_linearLayout_text"/>
+	    
+	<ImageView
+		android:id="@+id/days_dot"   
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:src="@drawable/timeline_dot_selector"
+	    android:layout_marginLeft="27dp"
+	    android:layout_alignTop="@+id/days_linearLayout_text"
+		android:layout_alignBottom="@+id/days_linearLayout_text"/>
+
+	<LinearLayout
+	    android:id="@+id/days_linearLayout_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:layout_marginLeft="45dp" >
+	    
+	    <TextView
+	        android:id="@+id/days_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginBottom="@dimen/item_text_margin"
+	        android:layout_marginTop="@dimen/item_text_margin"
+	        android:layout_marginRight = "@dimen/item_text_margin"
+	        android:gravity="left"
+	        android:paddingLeft="@dimen/item_text_padding"
+	        android:paddingRight="@dimen/item_text_padding"
+	        android:textColor="@color/text"
+	        android:textSize="@dimen/item_text_size" >
+    	</TextView>
+    </LinearLayout>
+
+</RelativeLayout>

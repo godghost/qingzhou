@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/frequent_background">
+    
+    <RelativeLayout
+        android:id="@+id/frequent_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/day_title_height"
+        android:orientation="horizontal">
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:text="@string/most_frequent_title"
+	        android:textColor="@color/white"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+       <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentBottom="true"
+	        android:background="@drawable/seprateline_dark" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearlayout_frequent_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/frequent_top" >
+
+        <ListView
+            android:id="@+id/frequent_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#000000"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

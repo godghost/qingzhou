@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+	   	<ImageView 
+	        android:id="@+id/welcome_settings_logo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/logo_text"/>
+   	
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:background="@color/input_background"
+	        android:padding="10dp"
+	        android:layout_marginTop="10dp">
+	
+	       <LinearLayout
+	           	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:gravity="left"
+		        android:orientation="vertical">
+			   <LinearLayout 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:gravity="center">
+			        <EditText
+			            android:id="@+id/welcome_name"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:textColor="@color/text"
+			        	android:hint="@string/welcome_settings_name"/>
+			    </LinearLayout>
+			    
+			    <LinearLayout 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:layout_marginTop="5dp">
+			        <TextView         
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:text="@string/welcome_settings_password_switch" 
+			        	android:textSize="18sp"
+			        	android:textColor="@color/text"/>
+				    <org.jraf.android.backport.switchwidget.Switch
+				        android:id="@+id/welcome_password_switch"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" />
+			    </LinearLayout>
+			    
+			    <LinearLayout 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:layout_marginTop="5dp">
+			        <EditText
+			            android:id="@+id/welcome_password"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:textColor="@color/text"
+			        	android:hint="@string/input_password"
+			        	android:inputType="numberPassword"
+						android:visibility="gone"
+			        	android:password="true"/>
+			    </LinearLayout>
+			    
+			   <LinearLayout 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:layout_marginTop="5dp">
+			        <EditText
+			            android:id="@+id/welcome_password_confirmed"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:textColor="@color/text"
+			        	android:hint="@string/confirm_password"
+			        	android:inputType="numberPassword"
+						android:visibility="gone"
+			        	android:password="true"/>
+			    </LinearLayout>
+		    </LinearLayout>
+	    </LinearLayout>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/welcome_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:text="@android:string/ok"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+    
+</RelativeLayout>

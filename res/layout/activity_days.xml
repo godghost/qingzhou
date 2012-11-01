@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/days_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/day_title_height"
+        android:orientation="horizontal">
+        
+        <ImageButton
+	        android:id="@+id/days_frequent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="12dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/button_frequent_selector"
+	        android:background="@null"
+	        android:padding="10dp" />
+
+	    <Button
+	        android:id="@+id/days_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="@color/text"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:background="@drawable/button_selector"
+	        android:paddingLeft="@dimen/item_text_padding"
+	        android:paddingRight="@dimen/item_text_padding"/>
+    </RelativeLayout>
+    
+      <ImageView
+        android:id="@+id/days_seperateline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/days_top"
+        android:background="@drawable/seprateline_light" />
+      
+      <Button
+        android:id="@+id/days_date"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/days_seperateline"
+		android:gravity="center_vertical|right"
+		android:paddingRight = "10dp"
+		android:paddingLeft = "10dp"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:background="@drawable/button_selector" />
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom = "5dp"
+        android:layout_below="@+id/days_date" >
+
+        <ListView
+            android:id="@+id/days_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#000000"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

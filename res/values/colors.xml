@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="timeline">#cacaca</color>
+    <color name="pressed">#1b972f</color>
+    <color name="text">#000000</color>
+    <color name="setting_background">#ff3c3939</color>
+    <color name="white">#ffffff</color>
+    <color name="input_background">#1234</color>
+    <color name="frequent_background">#3c3939</color>
+    <color name="graph_dot_color">#ffa633</color>
+    <color name="graph_dot_fill_color">#77ffa633</color>
+    <color name="disabled_color">#7b7b7b</color>
+</resources>

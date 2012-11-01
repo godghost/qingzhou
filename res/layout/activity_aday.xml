@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/aday_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/day_title_height"
+        android:orientation="horizontal">
+
+	    <ImageButton
+	        android:id="@+id/aday_back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="12dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/button_list_selector"
+	        android:background="@null" 
+	        android:padding="10dp" />
+	
+	    <TextView
+	        android:id="@+id/aday_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="@color/text"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+       <ImageView
+	        android:id="@+id/aday_seperateline"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentBottom="true"
+	        android:background="@drawable/seprateline_light" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_aday_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom = "45dp"
+        android:layout_below="@+id/aday_top" >
+
+        <ListView
+            android:id="@+id/aday_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#000000"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            />
+    </LinearLayout>
+    
+    <HorizontalScrollView 
+        android:id="@+id/scrollview_promotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/input_background"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <LinearLayout
+	        android:id="@+id/linearlayout_promption"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:gravity="left"/>
+    </HorizontalScrollView>
+
+</RelativeLayout>

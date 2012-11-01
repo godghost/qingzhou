@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="app_name">Qingzhou</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_main">Qingzhou</string>
+    <string name="title_activity_aday">ADayActivity</string>
+    <string name="title_activity_days">DaysActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="days_title_postfix"> ‧ Diary</string>
+    <string name="days_date_format">MMMM,yyyy</string>
+    <string name="aday_date_format">MMMM dd</string>
+    <string name="status_bar_notification_ticker_text">Don\'t forget your promise~</string>
+    <string name="status_bar_notification_text">Promise is promise~</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
+    <string name="input_password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="welcome_intro">A lightweight tool to track life.</string>
+    <string name="welcome_overview">Qingzhou is a tool that help you keep what happend everyday with text.</string>
+    <string name="welcome_promise">Welcome to use Qingzhou. You are promising to record your life everyday. And this app will remind you everyday. Will you agree?</string>
+    <string name="welcome_settings_name">Name</string>
+    <string name="welcome_settings_password_switch">Password:</string>
+    <string name="password_is_empty">Password is empty.</string>
+    <string name="password_is_wrong">Wrong password.</string>
+    <string name="password_not_equal">Passwords are not equal.</string>
+    <string name="reset_done">Reset done.</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="reset_password">Reset password</string>
+    <string name="reminder">Reminder</string>
+    <string name="pref_key_name">name</string>
+    <string name="pref_key_frequent">frequent</string>
+    <string name="pref_key_password_switcher">password_switcher</string>
+    <string name="pref_key_password">password</string>
+    <string name="pref_key_cloud">cloud</string>
+    <string name="pref_key_timer">timer</string>
+    <string name="pref_key_about">about</string>
+    <string name="title_activity_frequent">Most frequent</string>
+	<string name="most_frequent_title">Most frequent</string>
+	<string name="chart_summary">From {start} to {end}, {total} in total.</string>
+	<string name="chart_date_format">yyyy-MM-dd</string>
+	<string name="chart_legend_date_format">MM dd</string>
+	<string name="notice">Notice</string>
+	<string name="about">About</string>
+	<string name="about_msg">Created by Loong(godghost.huang@gmail.com)</string>
+</resources>

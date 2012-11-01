@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+	    android:id="@+id/timeline"
+	    android:layout_width="5dp"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="30dip"
+	    android:layout_gravity="center_vertical"
+	    android:src="@drawable/timeline"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignTop="@+id/linearLayout_text"
+		android:layout_alignBottom="@+id/linearLayout_text"/>
+	    
+	<ImageView
+		android:id="@+id/list_dot"   
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/timeline_dot_selector"
+	    android:layout_marginLeft="27dip"
+	    android:layout_gravity="center_vertical"
+	    android:layout_alignTop="@+id/linearLayout_text"
+		android:layout_alignBottom="@+id/linearLayout_text"/>
+
+	<LinearLayout
+	    android:id="@+id/linearLayout_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="45dp" 
+	    android:layout_gravity="center_vertical">
+	    
+	    <EditText
+	        android:id="@+id/list_text"
+	        android:background="@drawable/aday_item_left_selector"
+	        android:layout_width="wrap_content"
+	        android:maxWidth="200dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginBottom="@dimen/item_text_margin"
+	        android:layout_marginTop="@dimen/item_text_margin"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="@dimen/item_text_padding"
+	        android:paddingRight="@dimen/item_text_padding"
+	        android:textColor="@color/text"
+	        android:textSize="@dimen/item_text_size" >
+    	</EditText>
+	    
+	    <EditText
+	        android:id="@+id/list_quantity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginBottom="@dimen/item_text_margin"
+	        android:layout_marginTop="@dimen/item_text_margin"
+	        android:paddingLeft="@dimen/item_text_padding"
+	        android:paddingRight="@dimen/item_text_padding"
+	        android:gravity="center"
+	        android:textColor="@color/text"
+	        android:textSize="@dimen/item_text_size"
+	        android:background="@drawable/aday_item_right_with_quan_selector"
+	        android:inputType="number">
+    	</EditText>	    
+    	
+    	<ImageButton 
+	        android:id="@+id/list_del"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:gravity="center_vertical"
+	        android:layout_gravity="center_vertical"
+	        android:paddingLeft="5dp"
+	        android:src="@drawable/aday_del_selector"
+	        android:background="@null"
+	        android:visibility="invisible"/>
+    </LinearLayout>
+
+</RelativeLayout>

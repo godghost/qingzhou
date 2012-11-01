@@ -1,0 +1,66 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.loongsoft.qingzhou"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:launchMode="singleTask"
+            android:theme="@style/SwitchTheme" >
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ADayActivity"
+            android:label="@string/title_activity_aday"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".DaysActivity"
+            android:label="@string/title_activity_days"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".QingzhouPreference"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask"
+            android:theme="@style/PreferencesTheme" >
+        </activity>
+        <activity
+            android:name=".FrequentActivity"
+            android:label="@string/title_activity_frequent"
+            android:launchMode="singleTask">
+        </activity>
+        
+        <activity android:name="org.achartengine.GraphicalActivity" />
+
+        <provider
+            android:name=".QingzhouProvider"
+            android:authorities="com.loongsoft.provider.QingzhouProvider"
+            android:exported="false" />
+
+        <receiver android:name=".ReminderReciever" >
+            <intent-filter>
+                <action android:name="com.loongsoft.qingzhou.remind" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
